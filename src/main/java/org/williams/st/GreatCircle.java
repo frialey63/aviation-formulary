@@ -147,7 +147,7 @@ public class GreatCircle {
     }
 
     /**
-     * Crossing parallels
+     * Longitude of point on GC
      * 
      * @param lat
      * @return

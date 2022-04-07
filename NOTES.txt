@@ -1,3 +1,0 @@
-GreatCircle assumes West +
-
-FlatEarth assumes East +

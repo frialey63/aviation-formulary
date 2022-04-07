@@ -17,16 +17,16 @@ public class FlatEarth {
         return y - x * Math.floor(y / x);
     }
 
-    public FlatEarth(FEPoint p1) {
+    public FlatEarth(FEPoint p0) {
         super();
-        this.p0 = p1;
+        this.p0 = p0;
 
         final double e2 = f * (2.0 - f);
 
-        final double sinp1lat = Math.sin(p1.lat);
+        final double sinp0lat = Math.sin(p0.lat);
 
-        R1 = a * (1.0 - e2) / Math.pow((1.0 - e2 * (sinp1lat * sinp1lat)), (3 / 2));
-        R2 = a / Math.sqrt(1.0 - e2 * (sinp1lat * sinp1lat));
+        R1 = a * (1.0 - e2) / Math.pow((1.0 - e2 * (sinp0lat * sinp0lat)), 1.5);
+        R2 = a / Math.sqrt(1.0 - e2 * (sinp0lat * sinp0lat));
     }
 
     /**
