@@ -5,6 +5,6 @@ An old implementation of some spherical trigonometry by Ed Williams from 2005
 
 ## Notes
 
-GreatCircle assumes West +
+GreatCircle and RhumbLine assumes West +
 
 FlatEarth assumes East +
